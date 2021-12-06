@@ -1,0 +1,254 @@
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+(venv) C:\Users\jerzy\PycharmProjects\profiler>python -m cProfile -s tottime djikstra.py
+         3651 function calls (3636 primitive calls) in 0.038 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.021    0.021    0.021    0.021 {built-in method builtins.compile}
+       19    0.005    0.000    0.005    0.000 {built-in method nt.stat}
+        4    0.001    0.000    0.001    0.000 {built-in method io.open_code}
+      394    0.001    0.000    0.001    0.000 typing.py:759(__setattr__)
+        1    0.001    0.001    0.001    0.001 {built-in method nt.open}
+        1    0.001    0.001    0.001    0.001 {built-in method marshal.dumps}
+       28    0.001    0.000    0.002    0.000 {built-in method builtins.__build_class__}
+       55    0.001    0.000    0.002    0.000 typing.py:656(__init__)
+        3    0.001    0.000    0.001    0.000 {method 'read' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method io.open}
+        1    0.000    0.000    0.000    0.000 {built-in method nt.listdir}
+      394    0.000    0.000    0.001    0.000 typing.py:643(_is_dunder)
+        1    0.000    0.000    0.007    0.007 typing.py:1(<module>)
+       17    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x00007FFA02AE3810}
+        4    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap_external>:969(get_data)
+        9    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
+      396    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       60    0.000    0.000    0.000    0.000 typing.py:172(_collect_type_vars)
+      3/2    0.000    0.000    0.034    0.017 <frozen importlib._bootstrap_external>:777(exec_module)
+        3    0.000    0.000    0.027    0.009 <frozen importlib._bootstrap_external>:849(get_code)
+      4/2    0.000    0.000    0.037    0.018 <frozen importlib._bootstrap>:986(_find_and_load)
+      232    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+      398    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       26    0.000    0.000    0.000    0.000 typing.py:120(_type_check)
+        7    0.000    0.000    0.000    0.000 typing.py:1057(__init_subclass__)
+       38    0.000    0.000    0.002    0.000 typing.py:1428(_alias)
+       45    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:62(_path_join)
+        8    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+       11    0.000    0.000    0.000    0.000 typing.py:897(__init_subclass__)
+        1    0.000    0.000    0.038    0.038 djikstra.py:1(<module>)
+       45    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:64(<listcomp>)
+        4    0.000    0.000    0.005    0.001 <frozen importlib._bootstrap>:890(_find_spec)
+        7    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:68(_path_split)
+        4    0.000    0.000    0.000    0.000 {method 'extend' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1479(_fill_cache)
+        8    0.000    0.000    0.000    0.000 {built-in method _abc._abc_init}
+    21/20    0.000    0.000    0.001    0.000 typing.py:255(inner)
+        3    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap_external>:1302(_get_spec)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:294(cache_from_source)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:157(_get_module_lock)
+       78    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        8    0.000    0.000    0.000    0.000 functools.py:33(update_wrapper)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:629(spec_from_file_location)
+        9    0.000    0.000    0.000    0.000 typing.py:586(__init__)
+       19    0.000    0.000    0.005    0.000 <frozen importlib._bootstrap_external>:80(_path_stat)
+        7    0.000    0.000    0.000    0.000 typing.py:674(__getitem__)
+       49    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:222(_verbose_message)
+      4/2    0.000    0.000    0.034    0.017 <frozen importlib._bootstrap>:650(_load_unlocked)
+      124    0.000    0.000    0.000    0.000 typing.py:666(<genexpr>)
+        7    0.000    0.000    0.000    0.000 typing.py:187(_subs_tvars)
+      4/2    0.000    0.000    0.037    0.018 <frozen importlib._bootstrap>:956(_find_and_load_unlocked)
+        2    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1020(set_data)
+      6/3    0.000    0.000    0.029    0.010 <frozen importlib._bootstrap>:211(_call_with_frames_removed)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:477(_init_module_attrs)
+        4    0.000    0.000    0.000    0.000 typing.py:875(__class_getitem__)
+        1    0.000    0.000    0.000    0.000 typing.py:1818(IO)
+      4/1    0.000    0.000    0.038    0.038 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 abc.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:120(_write_atomic)
+        4    0.000    0.000    0.000    0.000 typing.py:248(_tp_cache)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:78(acquire)
+       11    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1265(_path_importer_cache)
+        1    0.000    0.000    0.000    0.000 <frozen zipimport>:63(__init__)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:591(_code_to_timestamp_pyc)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1394(__init__)
+       51    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:103(release)
+        9    0.000    0.000    0.000    0.000 typing.py:686(copy_with)
+        5    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:90(_path_is_mode_type)
+        8    0.000    0.000    0.000    0.000 abc.py:84(__new__)
+       97    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:493(_classify_pyc)
+       24    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       16    0.000    0.000    0.000    0.000 typing.py:717(__hash__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:58(__init__)
+        1    0.000    0.000    0.000    0.000 bisect.py:1(<module>)
+      3/2    0.000    0.000    0.000    0.000 typing.py:347(__getitem__)
+       50    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1252(_path_hooks)
+       21    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        7    0.000    0.000    0.000    0.000 typing.py:307(__new__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:549(module_from_spec)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:424(_get_cached)
+        7    0.000    0.000    0.000    0.000 {method 'rsplit' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1426(_get_spec)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.create_builtin}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:578(_compile_bytecode)
+       35    0.000    0.000    0.000    0.000 abc.py:7(abstractmethod)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:51(_unpack_uint32)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:46(_pack_uint32)
+        2    0.000    0.000    0.000    0.000 typing.py:815(__getitem_inner__)
+       58    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       41    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        1    0.000    0.000    0.000    0.000 typing.py:1728(__new__)
+        3    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap_external>:1334(find_spec)
+        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap_external>:1015(_cache_bytecode)
+       58    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 ntpath.py:116(splitdrive)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1520(path_hook_for_FileFinder)
+        7    0.000    0.000    0.000    0.000 typing.py:1121(runtime_checkable)
+        5    0.000    0.000    0.000    0.000 typing.py:733(__mro_entries__)
+        1    0.000    0.000    0.000    0.000 typing.py:1930(TextIO)
+        3    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+        4    0.000    0.000    0.000    0.000 functools.py:524(decorating_function)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:939(__init__)
+        1    0.000    0.000    0.000    0.000 ntpath.py:172(split)
+       11    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        9    0.000    0.000    0.000    0.000 typing.py:206(_check_generic)
+        1    0.000    0.000    0.021    0.021 <frozen importlib._bootstrap_external>:841(source_to_code)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:176(cb)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:36(_relax_case)
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1010(path_stats)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:35(_new_module)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:147(__enter__)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:456(_check_name_wrapper)
+        2    0.000    0.000    0.000    0.000 typing.py:219(_remove_dups_flatten)
+       16    0.000    0.000    0.000    0.000 typing.py:682(<genexpr>)
+        3    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:342(__init__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:143(__init__)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:376(cached)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:436(_calc_mode)
+        1    0.000    0.000    0.000    0.000 djikstra.py:79(main)
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:867(__exit__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:151(__exit__)
+        2    0.000    0.000    0.000    0.000 {built-in method nt.getcwd}
+       18    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+        1    0.000    0.000    0.000    0.000 djikstra.py:16(read_graph)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:725(find_spec)
+       12    0.000    0.000    0.000    0.000 typing.py:708(__eq__)
+        1    0.000    0.000    0.000    0.000 typing.py:647(_GenericAlias)
+        4    0.000    0.000    0.000    0.000 functools.py:63(wraps)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:389(parent)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:406(spec_from_loader)
+        1    0.000    0.000    0.000    0.000 typing.py:1916(BinaryIO)
+        3    0.000    0.000    0.000    0.000 typing.py:799(__getitem__)
+       18    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+       14    0.000    0.000    0.000    0.000 typing.py:1062(<genexpr>)
+        1    0.000    0.000    0.000    0.000 typing.py:300(_SpecialForm)
+        9    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:863(__enter__)
+        1    0.000    0.000    0.000    0.000 ntpath.py:69(join)
+        2    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:104(_path_isdir)
+        8    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+       14    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:526(_validate_timestamp_pyc)
+        4    0.000    0.000    0.000    0.000 functools.py:486(lru_cache)
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:99(_path_isfile)
+        8    0.000    0.000    0.000    0.000 typing.py:883(<genexpr>)
+        7    0.000    0.000    0.000    0.000 typing.py:827(<genexpr>)
+        6    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        1    0.000    0.000    0.000    0.000 {method 'index' of 'tuple' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:800(find_spec)
+        8    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        4    0.000    0.000    0.000    0.000 typing.py:329(__hash__)
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        6    0.000    0.000    0.000    0.000 typing.py:358(<genexpr>)
+       11    0.000    0.000    0.000    0.000 typing.py:598(<genexpr>)
+        1    0.000    0.000    0.000    0.000 typing.py:1514(SupportsInt)
+        1    0.000    0.000    0.000    0.000 typing.py:842(Generic)
+        4    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1400(<genexpr>)
+        6    0.000    0.000    0.000    0.000 typing.py:324(__eq__)
+        1    0.000    0.000    0.000    0.000 typing.py:489(ForwardRef)
+        5    0.000    0.000    0.000    0.000 typing.py:286(__init_subclass__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:232(_requires_builtin_wrapper)
+        9    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        8    0.000    0.000    0.000    0.000 typing.py:183(<listcomp>)
+        1    0.000    0.000    0.000    0.000 typing.py:1574(SupportsRound)
+        3    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1508(<setcomp>)
+        7    0.000    0.000    0.000    0.000 typing.py:320(__init__)
+        1    0.000    0.000    0.000    0.000 typing.py:1564(SupportsAbs)
+       11    0.000    0.000    0.000    0.000 {method '__init_subclass__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 typing.py:795(_VariadicGenericAlias)
+        1    0.000    0.000    0.000    0.000 typing.py:1608(__new__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:746(create_module)
+        1    0.000    0.000    0.000    0.000 typing.py:539(TypeVar)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1017(_handle_fromlist)
+        1    0.000    0.000    0.000    0.000 typing.py:281(_Final)
+        1    0.000    0.000    0.000    0.000 typing.py:1544(SupportsBytes)
+        3    0.000    0.000    0.000    0.000 {method 'to_bytes' of 'int' objects}
+        1    0.000    0.000    0.000    0.000 typing.py:1524(SupportsFloat)
+        1    0.000    0.000    0.000    0.000 typing.py:1965(io)
+        1    0.000    0.000    0.000    0.000 typing.py:1534(SupportsComplex)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.all}
+        2    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        1    0.000    0.000    0.000    0.000 typing.py:1637(NamedTuple)
+        3    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 typing.py:1023(Protocol)
+        1    0.000    0.000    0.000    0.000 typing.py:1554(SupportsIndex)
+        1    0.000    0.000    0.000    0.000 typing.py:1727(_TypedDictMeta)
+        1    0.000    0.000    0.000    0.000 typing.py:1980(re)
+        4    0.000    0.000    0.000    0.000 typing.py:886(<genexpr>)
+        1    0.000    0.000    0.000    0.000 typing.py:290(_Immutable)
+        5    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 ntpath.py:213(dirname)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:397(has_location)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:754(exec_module)
+        3    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:774(create_module)
+        1    0.000    0.000    0.000    0.000 typing.py:1003(_ProtocolMeta)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:964(get_filename)
+        1    0.000    0.000    0.000    0.000 typing.py:1606(NamedTupleMeta)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 ntpath.py:34(_get_bothseps)
+        1    0.000    0.000    0.000    0.000 typing.py:933(_TypingEmpty)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.exec_builtin}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 typing.py:940(_TypingEllipsis)
+        1    0.000    0.000    0.000    0.000 typing.py:1753(TypedDict)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 typing.py:1742(<dictcomp>)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:771(is_package)
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python38\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Program Files\Python38\lib\cProfile.py", line 196, in <module>
+    main()
+  File "C:\Program Files\Python38\lib\cProfile.py", line 189, in main
+    runctx(code, globs, None, options.outfile, options.sort)
+  File "C:\Program Files\Python38\lib\cProfile.py", line 19, in runctx
+    return _pyprofile._Utils(Profile).runctx(statement, globals, locals,
+  File "C:\Program Files\Python38\lib\profile.py", line 62, in runctx
+    prof.runctx(statement, globals, locals)
+  File "C:\Program Files\Python38\lib\cProfile.py", line 100, in runctx
+    exec(cmd, globals, locals)
+  File "djikstra.py", line 124, in <module>
+    main()
+  File "djikstra.py", line 82, in main
+    graph_edges = read_graph(file_path)
+  File "djikstra.py", line 18, in read_graph
+    with open(file_path, "r") as file_pointer:
+FileNotFoundError: [Errno 2] No such file or directory: 'com-amazon.ungraph.txt'
+
+(venv) C:\Users\jerzy\PycharmProjects\profiler>
